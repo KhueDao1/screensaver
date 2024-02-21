@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+}
+img{
+        max-width: 100%;
+}
+body{
+    margin: 0px;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: darkblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.square{
+    --s: 10vw;
+    width: var(--s);
+    height: var(--s);
+    background-color: greenyellow;
+    /* animation: spin 4s 2s infinite alternate ease-out backwards; */
+    /* animation-name: spin;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: 4;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards; */
+}
+@keyframes spin{
+    0%{
+        background-color: yellow;
+        border-radius: 0;
+        rotate: 0;
+    }
+    30%{
+        background-color: red;
+        border-radius: 10%;
+        rotate: 120deg;
+    }
+    75%{
+        background-color: violet;
+        border-radius: 15%;
+        rotate: 240deg;
+    }
+    100%{
+        background-color: royalblue;
+        border-radius: 30%;
+        rotate: 360deg;
+    }
+}
+
+.circle{
+    --s: 20vh;
+    width: var(--s);
+    height: var(--s);
+    border-radius: 50%;
+    background-color: yellow;
+    /* animation: pulse 4s 2s infinite alternate ease-in-out; */
+}
+@keyframes pulse{
+    0%{
+        background-color: lightsteelblue;
+        opacity: 100%;
+        transform: scale(1);
+    }
+    40%{
+        background-color: slateblue;
+        opacity: 80%;
+        transform: scale(0.8);
+    }
+    100%{
+        background-color: skyblue;
+        opacity: 60%;
+        transform: scale(1.6);
+    }
+}
+
+.rectangle{
+    background-color: aqua;
+    width: 20vw;
+    height: 10%;
+    position: absolute;
+    left: 0;
+    align-self: flex-end;
+    /* animation: run 8s infinite ease-out; */
+}
+@keyframes run {
+    0%{
+        left: -20vw;
+    }
+    100%{
+        left: 120vw;
+    }
+}
