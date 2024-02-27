@@ -22,7 +22,7 @@ body{
     width: var(--s);
     height: var(--s);
     background-color: greenyellow;
-    /* animation: spin 4s 2s infinite alternate ease-out backwards; */
+    animation: spin 4s 2s infinite alternate ease-out backwards;
     /* animation-name: spin;
     animation-duration: 4s;
     animation-delay: 2s;
@@ -60,7 +60,7 @@ body{
     height: var(--s);
     border-radius: 50%;
     background-color: yellow;
-    /* animation: pulse 4s 2s infinite alternate ease-in-out; */
+    animation: pulse 4s 2s infinite alternate ease-in-out;
 }
 @keyframes pulse{
     0%{
@@ -87,7 +87,7 @@ body{
     position: absolute;
     left: 0;
     align-self: flex-end;
-    /* animation: run 8s infinite ease-out; */
+    animation: run 8s infinite ease-out;
 }
 @keyframes run {
     0%{
