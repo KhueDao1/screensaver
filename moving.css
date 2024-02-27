@@ -11,10 +11,10 @@ body{
 
 
 .window{
-    margin: 30% 0;
+    margin: 10vh 0;
     background-color: rgb(144, 229, 218);
     width: 100vw;
-    height: 40vh;
+    height: 80vh;
     position: relative;
     
 }
@@ -52,7 +52,7 @@ body{
 }
 
 .house{
-    background-color: rgb(250, 245, 112);    
+    background-color: darkblue;    
     mix-blend-mode: overlay;
     height: 30vw;
     width: 10vw;
