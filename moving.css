@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+img{
+        max-width: 100%;
+}
+body{
+    margin: 0px;
+    background-color: rgb(12, 54, 90);
+}
+
+
+.window{
+    margin: 30% 0;
+    background-color: rgb(144, 229, 218);
+    width: 100vw;
+    height: 40vh;
+    position: relative;
+    
+}
+
+.cloud{
+    background-color: azure;
+    width: 20vw;
+    height: 4vw;
+    position: absolute;
+    top: 2vh;
+    left: 40vw;
+    animation: run 8s infinite ;
+}
+.c2{
+    top: 3vh;
+    width: 10vw;
+    left: 40vw;;
+    animation: run 6s 2s infinite ease-in-out both;
+}
+.c3{
+    height: 6vw;
+    animation: run 10s 1s infinite linear both;
+}
+.c4{
+    top: 4vh;
+    width: 15vw;
+    height: 1vw;
+    animation: run 24s infinite ease-in both;
+}
+.c4{
+    top: 6vh;
+    width: 15vw;
+    height: 2vw;
+    animation: run 18s infinite ease-out both;
+}
+
+.house{
+    background-color: rgb(250, 245, 112);    
+    mix-blend-mode: overlay;
+    height: 30vw;
+    width: 10vw;
+    animation: run 6s infinite ease-in both;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.h1{
+    height: 25vw;
+    animation: run 12s 500ms infinite linear both;
+    
+}
+.h2{
+    height: 15vw;
+    width: 20vw;
+    animation: run 18s 50ms infinite cubic-bezier(.44,-0.07,.69,1.1) both;
+}
+.h3{
+    height: 10vw;
+    width: 15vw;
+    animation: run 4s 1000ms infinite ease-out both;
+}
+
+@keyframes run {
+    0%{
+        left: 120vw;
+    }
+    100%{
+        left: -20vw;
+    }
+}
+
