@@ -24,7 +24,19 @@ body{
     position: absolute;
     left: 0;
     animation: slide 24s alternate infinite linear;
-}
+  animation: bg 6s infinite alternate ease-in-out;
+  }
+
+@keyframes bg{
+    0%{
+      background-position: left;
+      background-size: 110%;
+    }
+     100%{
+      background-position: right;
+      background-size: 400%;
+    }
+  }  
 @keyframes slide{
     0%{
         left: 0;
@@ -33,6 +45,7 @@ body{
         left: 100;
     }
 }
+
 .cloud{
     background-color: azure;
     width: 20vw;
