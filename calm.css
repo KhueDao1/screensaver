@@ -113,7 +113,7 @@ h1{
   background-image: url("nature.JPG");
   background-size: cover; 
   z-index: 2;
-  animation: bg 6s infinite alternate ease-out;
+  animation: bg 6s infinite alternate ease-in-out;
   }
 
 @keyframes bg{
