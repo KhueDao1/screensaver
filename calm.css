@@ -41,12 +41,8 @@ h1{
   background-size: cover;
   background-position: right center;
 }
-/* .flower{
-  position: absolute;
-  object-fit: cover; 
-  z-index: 2;
-  }*/
-/* .rect{
+
+.rect{
   position: absolute;
   right: 20%;
   bottom: 20%;
@@ -71,15 +67,8 @@ h1{
 .r4{
   background-color: violet;
   animation: expand 5s 1s infinite alternate ease-in;
-} */
-@keyframes expand{
-  0%{
-    scale: 1;
-  }
-   100%{
-     scale: 10;
-  }
 }
+
 
 /*breath in box*/
 .box{
@@ -119,6 +108,32 @@ h1{
   animation: move 6s infinite alternate ease-in;
 }
 
+.nature{
+  margin-bottom: 10vh;
+  background-image: url("nature.JPG");
+  background-size: cover; 
+  z-index: 2;
+  animation: bg 6s infinite alternate ease-out;
+  }
+
+@keyframes bg{
+    0%{
+      background-position: left;
+      background-size: 110%;
+    }
+     100%{
+      background-position: right;
+      background-size: 400%;
+    }
+  }  
+@keyframes expand{
+  0%{
+    scale: 1;
+  }
+   100%{
+     scale: 10;
+  }
+}
 @keyframes minimize{
   0%{
     scale: 0.4;
